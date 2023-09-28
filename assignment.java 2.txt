@@ -1,0 +1,72 @@
+2. public class FirstTenOddNumbers {
+    public static void main(String[] args) {
+        int count = 0;
+        int number = 1;
+
+        while (count < 10) {
+            if (number % 2 != 0) {
+                System.out.print(number + " ");
+                count++;
+            }
+            number++;
+        }
+    }
+}
+
+1. public class SupermarketDiscounts {
+    public static void main(String[] args) {
+        String productName = "allproducts";
+        double amount = 20000;
+        double discount = 0.0;
+
+        switch (productName) {
+            case "nuts":
+                discount = 0.10;
+                break;
+            case "oils":
+                discount = 0.05;
+                break;
+            case "soaps":
+                discount = 0.12;
+                break;
+            case "otherproducts":
+                discount = 0.02;
+                break;
+            case "allproducts":
+                // If the customer chose all products, calculate the total discount.
+                discount = 0.10 + 0.05 + 0.12 + 0.02;
+                break;
+            default:
+                System.out.println("Product not found.");
+                return;
+        }
+
+        double totalDiscountAmount = amount * discount;
+        System.out.println("Discount for " + productName + " is: " + (discount * 100) + "%");
+        System.out.println("Total discount amount is: " + totalDiscountAmount);
+    }
+}
+
+
+
+3. public class control {
+
+	public static void main(String[] args) {
+		int n = 4;
+		for(int i=1;i<=n;i++)  //rows
+		{
+			for(int j=1;j<=n-i;j++) 
+			{
+				
+                        System.out.print(" ");
+			}
+			for (int k=1;k<=i;k++) {
+			System.out.print("*");  
+		} 
+			System.out.println();                        
+                                  
+	}
+
+}
+}
+
